@@ -1,0 +1,51 @@
+/*index*/
+.body_index{
+    background-color: aqua;
+    text-align: center;
+    color: black;
+}
+h1{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.p_docker{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.button_docker{
+    margin-left: 575px;
+    border: none;
+    display: block;
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.p_ssh{
+    padding-left: 27px;
+    padding-right: 27px;
+}
+.button_ssh{
+    margin-left: 575px;
+    border: none;
+    margin-top: 50px;
+    display: block;
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+}
+/*docker*/
+.body_docker{
+    background-image: url(../img/fondo.jpg);
+    color: white;
+    background-size: 100% 100%;
+    text-align: justify;
+}
+.div_docker{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.div_dockerfile{
+    margin-left: 200px;
+    margin-right: 200px;
+}
