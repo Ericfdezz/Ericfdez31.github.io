@@ -1,0 +1,176 @@
+/*index*/
+.body_index{
+    background-image: url(../img/fondooo.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    color: white;
+    background-size: 100% 100%;
+    text-align: justify;
+}
+.h1_index{
+    margin-top: 50px;
+    margin-bottom: 125px;
+    font-size: 70px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.a_button{
+    text-decoration: none;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+.button_ssh{
+    margin-left: 300px;
+    border: none;
+    margin-top: 50px;
+    display: block;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+.p_docker{
+    padding-left: 52px;
+    padding-right: 52px;
+}
+.p_ssh{
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: center;
+}
+.p_http{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+/*docker*/
+.body_docker{
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    color: white;
+    background-size: 100% 100%;
+    text-align: justify;
+}
+.div_docker{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.div_dockerfile{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.h1_docker{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+/*ssh*/
+.body_ssh{
+    background-image: url(../img/fond.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    color: white;
+    background-size: 100% 100%;
+    text-align: justify;
+}
+.h1_ssh{
+    /*margin-top: 50px;
+    margin-bottom: 150px;
+    font-size: 70px;
+    margin-left: 200px;*/
+    margin-top: 50px;
+    margin-bottom: 125px;
+    font-size: 70px;
+    text-align: center;
+}
+.p_p1{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.button_p1{
+    margin-left: 150px;
+    border: none;
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+}
+.assh_button{
+    text-decoration: none;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+.p_p2{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.button_p2{
+    margin-left: 150px;
+    border: none;
+    margin-top: 50px;
+    display: block;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+/*practica 1-2 ssh*/
+.body_p1ssh{
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    color: white;
+    background-size: 100% 100%;
+    text-align: justify;
+}
+.div_p1ssh{
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+.h1_p1ssh{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.p_p1ssh{
+    font-size: 20px;
+}
+.img_p1{
+    width: 725px;
+}
+/*ftp*/
+.body_ftp{
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    color: white;
+    background-size: 100% 100%;
+    text-align: justify;
+}
+.div_ftp{
+    text-align: center;
+}
+.h1_ftp{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.p_ftp{
+    font-size: 20px;
+}
+.img_ftp{
+    width: 725px;
+}
+/*http*/
+.body_http{
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    color: white;
+    background-size: 100% 100%;
+    text-align: justify;
+}
