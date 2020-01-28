@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/index_css.css">
+        <title>Crear contenedor apache</title>
+    </head>
+    <body class="body_docker">
+        <div class="div_p1ssh">
+            <div class="div_p1e1">
+                <h1 class="h1_p1ssh">Instalación del servidor</h1>
+                <p class="p_p1ssh">Creamos una carpeta que se llame “Dockerapache”.</p>
+                <img class="img_p1" src="img/contenedorapache/1.png" alt="foto ej1">
+            </div>
+            <div class="div_p1e2">
+                <p class="p_p1ssh">Dentro de Dockerapache creamos otra carpeta que se llame “public-html”.</p>
+                <img class="img_p1" src="img/contenedorapache/2.png" alt="foto ej2">
+            </div>
+            <div class="div_p1e3">
+                <p class="p_p1ssh">Dentro de public-html creamos un fichero html llamado “index.html” con los siguientes datos.</p>
+                <img class="img_p1" src="img/contenedorapache/3.png" alt="foto ej3">
+            </div>
+            <div class="div_p1e4">
+                <p class="p_p1ssh">Ahora dentro de Dockerapache creamos un fichero llamado “Dockerfile” con el siguiente contenido.</p>
+                <img class="img_p1" src="img/contenedorapache/4.png" alt="foto ej4">
+            </div>
+            <div class="div_p1e2">
+                <p class="p_p1ssh">El siguiente paso es generar la imagen que nos servirá de plantilla para nuestros contenedores.</p>
+                <img class="img_p1" src="img/contenedorapache/5.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <p class="p_p1ssh">Ahora podemos crear un contenedor "vivo", lo creamos y lanzamos.</p>
+                <img class="img_p1" src="img/contenedorapache/6.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <h1 class="h1_p1ssh">Configuración del contenedor</h1>
+                <p class="p_p1ssh">Rehacemos la imagen.</p>
+                <img class="img_p1" src="img/contenedorapache/7.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <p class="p_p1ssh">Pararamos el contenedor.</p>
+                <img class="img_p1" src="img/contenedorapache/8.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <p class="p_p1ssh">Borrarmos el contenedor.</p>
+                <img class="img_p1" src="img/contenedorapache/9.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <p class="p_p1ssh">Creamos de nuevo el contenedor y lo lanzamos.</p>
+                <img class="img_p1" src="img/contenedorapache/10.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <p class="p_p1ssh">Copiamos el archivo de configuración del contenedor a la máquina física.</p>
+                <img class="img_p1" src="img/contenedorapache/11.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <p class="p_p1ssh">Modificamos el Dockerfile y nos tiene que quedar lo siguiente.</p>
+                <img class="img_p1" src="img/contenedorapache/12.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <h1 class="h1_p1ssh">Creamos el fichero htpasswd</h1>
+                <p class="p_p1ssh">Primero lo instalamos con el siguiente comando.</p>
+                <img class="img_p1" src="img/contenedorapache/13.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <p class="p_p1ssh">Donde está el dockerfile creamos “htpasswd”.</p>
+                <img class="img_p1" src="img/contenedorapache/14.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <h1 class="h1_p1ssh">Añadimos el .htpasswd a la imagen</h1>
+                <p class="p_p1ssh">Modificamos el Dockerfile y nos tiene que quedar lo siguiente.</p>
+                <img class="img_p1" src="img/contenedorapache/15.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <h1 class="h1_p1ssh">Añadimos la autenticación a Apache</h1>
+                <p class="p_p1ssh">Añadimos lo siguiente al final del fichero httpd.conf</p>
+                <img class="img_p1" src="img/contenedorapache/16.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <h1 class="h1_p1ssh">Script para automatizar la actualización de los contenedores.</h1>
+                <p class="p_p1ssh">Ahora vamos a crear un script para automatizar la actualización de los contenedores llamado “reload.sh”.</p>
+                <img class="img_p1" src="img/contenedorapache/17.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <h1 class="h1_p1ssh">Autenticación DIGEST</h1>
+                <p class="p_p1ssh">Primero creamos el archivo de contraseñas llamado “htdigest”.</p>
+                <img class="img_p1" src="img/contenedorapache/18.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <p class="p_p1ssh">Modificamos el Dockerfile y nos tiene que quedar lo siguiente.</p>
+                <img class="img_p1" src="img/contenedorapache/19.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <p class="p_p1ssh">Modificamos el httpd.conf y añadimos al final lo siguiente.</p>
+                <img class="img_p1" src="img/contenedorapache/20.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <h1 class="h1_p1ssh">Añadiendo seguridad SSL al contenedor</h1>
+                <p class="p_p1ssh">Modificamos el reload.sh y se nos tiene que quedar lo siguiente.</p>
+                <img class="img_p1" src="img/contenedorapache/21.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <p class="p_p1ssh">Modificamos el Dockerfile y nos tiene que quedar lo siguiente.</p>
+                <img class="img_p1" src="img/contenedorapache/22.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <p class="p_p1ssh">Modificamos el httpd.conf y añadimos al final lo siguiente.</p>
+                <img class="img_p1" src="img/contenedorapache/23.png" alt="foto ej5">
+            </div>
+            <div class="div_p1e2">
+                <p class="p_p1ssh">Ejecutamos el script reload y ya estaría corriendo nuestro contenedor apache.</p>
+                <img class="img_p1" src="img/contenedorapache/24.png" alt="foto ej5">
+            </div>
+        </div>
+    </body>
+</html>
